@@ -64,7 +64,7 @@ python3 -m pip install -r requirements.txt
 ```
 
 
-## 5. Configure the bot
+### 5. Configure the bot
 
 ```bash
 cp config.example.ini config.ini
@@ -77,7 +77,7 @@ Fill in the following fields in `config.ini` - don't use quotes around the value
 - `chatid`: The ID of the group you want to use the bot in. Don't know the ID? Run the bot in the group and send any message. The bot will print the chat ID in the console.
 
 
-## 6. Run the bot
+### 6. Run the bot
 
 Activate the virtual environment and run the bot
 
@@ -87,7 +87,7 @@ python3 main.py
 ```
 
 
-## 7. (Optional) Create a systemd service to start the bot after a server reboot
+### 7. (Optional) Create a systemd service to start the bot after a server reboot
 
 ```bash
 sudo nano /etc/systemd/system/telegram-autodelete-bot.service
