@@ -197,9 +197,9 @@ async def on_new_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
     asyncio.create_task(delete_message(update.message.chat_id, update.message.message_id, context.bot, TIME_SECONDS))
 
     """
-    ---- POST ACTIONS HERE ----
-    even if the part below part crashes, the message will be deleted correctly :)
-    you can customize this part to your needs
+    ---- CUSTOM POST ACTIONS HERE ----
+    Even if the code below crashes, the message will be deleted correctly :)
+    You can customize this part to your needs
     """
 
 
