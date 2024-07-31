@@ -1,0 +1,4 @@
+[bot]
+apitoken = ADD_TELEGRAM_BOT_TOKEN_HERE_WITHOUT_QUOTES
+seconds = 3600
+chatid = -1000000000000
