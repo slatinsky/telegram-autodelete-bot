@@ -1,8 +1,8 @@
 import datetime
 import json
 import os
-
 import asyncio
+import sqlite3
 
 from telegram import Update
 import telegram
@@ -30,7 +30,6 @@ class MessageIds:
     """
 
     def __init__(self):
-        import sqlite3
         self.conn = sqlite3.connect('mesages.sqlite3')
         self.cursor = self.conn.cursor()
         self.cursor.execute('CREATE TABLE IF NOT EXISTS message_ids (chat_id INTEGER, message_id INTEGER, timestamp REAL)')
