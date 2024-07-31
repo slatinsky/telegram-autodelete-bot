@@ -30,7 +30,7 @@ class MessageIds:
     """
 
     def __init__(self):
-        self.conn = sqlite3.connect('mesages.sqlite3')
+        self.conn = sqlite3.connect('messages.sqlite3')
         self.cursor = self.conn.cursor()
         self.cursor.execute('CREATE TABLE IF NOT EXISTS message_ids (chat_id INTEGER, message_id INTEGER, timestamp REAL)')
         self.conn.commit()
